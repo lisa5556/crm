@@ -1,6 +1,7 @@
 // 对axios进行二次封装
-axios.defaults.baseURL="http://localhost:8888";
+axios.defaults.baseURL="http://127.0.0.1:8888";
 
+axios.defaults.withCredentials=true;
 // 数据以表单形式扔给服务器
 axios.defaults.headers["Content-Type"]="application/x-www-form-urlencoded";
 // 还是以表单形式扔给服务器
